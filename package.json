@@ -1,0 +1,9 @@
+{
+  "name": "lar-mais-platform",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
