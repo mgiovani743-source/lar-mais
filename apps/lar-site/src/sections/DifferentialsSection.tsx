@@ -38,7 +38,7 @@ export default function DifferentialsSection() {
 
       <div className="section-padding relative z-10">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             {/* Coluna esquerda — Logo + Stat Card */}
             <motion.div
@@ -59,11 +59,11 @@ export default function DifferentialsSection() {
               <img
                 src="/logo.png"
                 alt=""
-                className="relative z-10 w-52 h-52 object-contain drop-shadow-xl"
+                className="hidden lg:block relative z-10 w-52 h-52 object-contain drop-shadow-xl"
               />
 
               {/* Card de stat */}
-              <div className="relative z-10 -mt-4 bg-white rounded-2xl shadow-strong p-5 w-72 border border-neutral-100">
+              <div className="relative z-10 lg:-mt-4 bg-white rounded-2xl shadow-strong p-5 w-full max-w-[280px] sm:w-72 border border-neutral-100">
                 <div className="text-center pb-4 border-b border-neutral-100 mb-4">
                   <p className="text-xs text-neutral-400 uppercase tracking-wider font-bold mb-1">Resultado dos clientes</p>
                   <p
@@ -91,7 +91,7 @@ export default function DifferentialsSection() {
               <motion.div
                 animate={{ y: [-5, 5, -5] }}
                 transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-4 -right-4 bg-accent text-white rounded-xl shadow-medium px-3 py-2"
+                className="hidden lg:block absolute top-4 -right-4 bg-accent text-white rounded-xl shadow-medium px-3 py-2"
               >
                 <p className="text-xs font-bold">100% focada em</p>
                 <p className="text-xs font-black">Minha Casa Minha Vida</p>

@@ -17,7 +17,7 @@ export default function TestimonialCard({ testimonial, index = 0 }: TestimonialC
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.5, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
-      className="card-base p-6 flex flex-col gap-4 min-w-[320px] sm:min-w-[380px]"
+      className="card-base p-6 flex flex-col gap-4 min-w-[280px] sm:min-w-[380px]"
     >
       {/* Stars */}
       <div className="flex gap-0.5" role="img" aria-label={`${testimonial.rating} de 5 estrelas`}>

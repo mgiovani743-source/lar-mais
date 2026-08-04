@@ -118,7 +118,7 @@ export default function CTAFinalSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Falar com especialista no WhatsApp"
-                  className="group flex items-center justify-center gap-3 px-10 py-5 bg-secondary text-white rounded-full font-black text-lg hover:bg-secondary-600 hover:shadow-secondary hover:scale-[1.03] transition-all duration-250 shadow-strong focus-visible:ring-4 focus-visible:ring-secondary/40"
+                  className="w-full sm:w-auto group flex items-center justify-center gap-3 px-10 py-5 bg-secondary text-white rounded-full font-black text-lg hover:bg-secondary-600 hover:shadow-secondary hover:scale-[1.03] transition-all duration-250 shadow-strong focus-visible:ring-4 focus-visible:ring-secondary/40"
                 >
                   <MessageCircle className="w-5 h-5" aria-hidden="true" />
                   Quero falar com um especialista

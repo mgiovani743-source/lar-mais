@@ -13,7 +13,7 @@ export default function FAQSection() {
   return (
     <section id="faq" aria-labelledby="faq-title" className="section-padding bg-[#FEFEFE]">
       <Container>
-        <div className="grid lg:grid-cols-[1fr_2fr] gap-16 items-start">
+        <div className="grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-16 items-start">
           {/* Left — header */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}

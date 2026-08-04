@@ -113,7 +113,7 @@ export default function PropertiesSection({ title = 'Encontre seu apartamento id
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Falar com especialista no WhatsApp sobre imóveis"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-white rounded-full font-bold hover:bg-secondary-600 hover:shadow-secondary hover:scale-[1.03] transition-all duration-250 focus-visible:ring-4 focus-visible:ring-secondary/30"
+            className="w-full sm:w-auto flex justify-center items-center gap-2 px-8 py-4 bg-secondary text-white rounded-full font-bold hover:bg-secondary-600 hover:shadow-secondary hover:scale-[1.03] transition-all duration-250 focus-visible:ring-4 focus-visible:ring-secondary/30"
           >
             Falar com um especialista
             <ArrowRight className="w-4 h-4" aria-hidden="true" />

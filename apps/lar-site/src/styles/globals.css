@@ -33,7 +33,7 @@
   }
 
   .section-padding {
-    @apply py-20 md:py-32;
+    @apply py-14 sm:py-20 md:py-32;
   }
   
   .gradient-text {

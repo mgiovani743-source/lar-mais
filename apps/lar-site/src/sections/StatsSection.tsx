@@ -72,7 +72,7 @@ export default function StatsSection() {
       </div>
 
       <Container className="relative z-10 py-16">
-        <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 gap-0 divide-x divide-white/15">
+        <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-y-0 divide-x divide-white/15">
           {STATS.map((stat, index) => (
             <motion.div
               key={stat.id}
@@ -84,7 +84,7 @@ export default function StatsSection() {
               {/* Valor */}
               <p
                 className="font-heading font-black text-[#D2FE30] mb-1 group-hover:scale-105 transition-transform duration-300"
-                style={{ fontSize: 'clamp(2.2rem, 4vw, 3.2rem)', lineHeight: 1 }}
+                style={{ fontSize: 'clamp(1.8rem, 5vw, 3.2rem)', lineHeight: 1 }}
                 aria-live="polite"
               >
                 <CountUp target={stat.value} isVisible={isInView} />

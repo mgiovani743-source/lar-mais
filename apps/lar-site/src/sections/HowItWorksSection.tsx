@@ -70,7 +70,7 @@ export default function HowItWorksSection() {
           {/* Steps — lista vertical com número lateral */}
           <div ref={ref} className="max-w-2xl mx-auto relative">
             {/* Linha vertical conectora */}
-            <div className="absolute left-8 top-8 bottom-8 w-0.5 bg-neutral-200" aria-hidden="true">
+            <div className="absolute left-6 sm:left-8 top-8 bottom-8 w-0.5 bg-neutral-200" aria-hidden="true">
               <motion.div
                 className="w-full bg-gradient-to-b from-secondary to-primary origin-top"
                 style={{ height: '100%' }}
@@ -89,11 +89,11 @@ export default function HowItWorksSection() {
                     initial={{ opacity: 0, x: -24 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.55, delay: 0.15 + index * 0.12, ease: [0.22, 1, 0.36, 1] }}
-                    className="relative flex gap-6 items-start"
+                    className="relative flex gap-4 sm:gap-6 items-start"
                   >
                     {/* Ícone circular */}
                     <div
-                      className={`relative z-10 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-medium transition-all duration-300 hover:scale-105 ${
+                      className={`relative z-10 w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0 shadow-medium transition-all duration-300 hover:scale-105 ${
                         index % 2 === 0 ? 'bg-secondary' : 'bg-primary'
                       }`}
                     >

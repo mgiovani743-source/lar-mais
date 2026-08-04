@@ -24,7 +24,7 @@ export default function HomePage({ content, settings }: HomePageProps) {
 
   return (
     <>
-      {(!heroSection || heroSection.active) && <HeroSection title={heroSection?.title} subtitle={heroSection?.subtitle} />}
+      {(!heroSection || heroSection.active) && <HeroSection title={heroSection?.title} subtitle={heroSection?.subtitle} settings={settings} />}
       <StatsSection />
       <HowItWorksSection />
       <BenefitsSection />
