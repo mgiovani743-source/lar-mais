@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    @apply font-sans text-neutral-800 antialiased bg-[#FEFEFE];
+  }
+
+  /* Typography Polish */
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-32;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary;
+  }
+  
+  /* Hero section dynamic gradient */
+  .hero-gradient {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 45%, #D2FE30 75%, #D2FE30 100%);
+  }
+  @media (min-width: 1024px) {
+    .hero-gradient {
+      background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 30%, #f4ffc4 50%, #D2FE30 65%, #D2FE30 100%);
+    }
+  }
+}
