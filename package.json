@@ -2,6 +2,12 @@
   "name": "lar-mais-platform",
   "private": true,
   "version": "1.0.0",
+  "scripts": {
+    "dev:site": "npm run dev --workspace=apps/lar-site",
+    "dev:cms": "npm run dev --workspace=apps/lar-cms",
+    "build:site": "npm run build --workspace=apps/lar-site",
+    "build:cms": "npm run build --workspace=apps/lar-cms"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"
